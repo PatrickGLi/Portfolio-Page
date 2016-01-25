@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="shortcut icon" href="assets/img/icons/favicon.ico">
 
     <title>patrick-li</title>
@@ -56,7 +57,7 @@
 	<div id="headerwrap">
 		<div class="container">
 			<div class="row centered">
-				<div class="col-lg-offset-8 col-lg-4 col-md-offset-6 col-md-6 col-sm-offset-3 col-sm-9">
+				<div class="col-lg-offset-9 col-lg-3 col-md-offset-7 col-md-5 col-sm-offset-8 col-sm-4 col-xs-offset-8 col-xs-4">
 					<h1>patrick li</h1>
 					<h3>software developer</h3>
 				</div><!--/.col-lg-12 -->
@@ -241,8 +242,32 @@
     <script src="assets/js/bootstrap.js"></script>
     <script>
       function navigate(location) {
-        debugger
         window.location.href = location;
+      }
+
+      $(document).ready(function(){
+        resizeDiv();
+      });
+
+      window.onresize = function(event) {
+        resizeDiv();
+      }
+
+      function resizeDiv() {
+        vpw = $(window).width();
+        vph = $(window).height();
+        $('#headerwrap').css({'height': 0.6 * vpw});
+        $('#headerwrap').css({'padding-top': 0.15 * vpw});
+        $('#headerwrap h1').css({'font-size': 0.045 * vpw});
+        $('#headerwrap h3').css({'font-size': 0.02 * vpw});
+
+        // if (vpw < 900) {
+        //   $('#headerwrap h1').css({'color': 'white'});
+        //   $('#headerwrap h3').css({'color': 'white'});
+        // } else {
+        //   $('#headerwrap h1').css({'color': '#1A1A1A'});
+        //   $('#headerwrap h3').css({'color': '#1A1A1A'});
+        // }
       }
     </script>
   </body>
