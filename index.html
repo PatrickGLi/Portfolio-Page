@@ -55,6 +55,7 @@
 	</div><!--/ #section-topbar -->
 
 	<div id="headerwrap">
+    <div id="background-photo"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-offset-9 col-lg-3 col-md-offset-7 col-md-5 col-sm-offset-8 col-sm-4 col-xs-5">
@@ -75,14 +76,15 @@
 					<p class="sub-titles">about me</p>
 				</div>
 				<div class="col-lg-6">
-					<p>I am a web developer based in San Francisco. I am a person who loves
+					<p>I am a web developer based in San Francisco. I love
             creating, and I love the ambitious mentality that the
             modern is moving towards.
           </p>
           <p>
-            I switched from a career in Mechanical Engineering to learning
-            how to code. Programming has the elegance and the constant
-            challenge and reward that my passion needs. Learn more about me.
+            I switched from a career in Mechanical Engineering to programming.
+             Code has the elegance and the constant
+            challenge and reward that my passion needs. I have experience writing
+            in JavaScript, Ruby on Rails, and React.js. Learn more about me.
           </p>
 				</div>
 			</div>
@@ -144,7 +146,28 @@
 				<div class="col-lg-2 col-lg-offset-1">
 					<p class="sub-titles">projects</p>
 				</div>
-				<div class="col-lg-6 image">
+
+        <div class="col-lg-6 image">
+          <p><img class="img-responsive" src="assets/img/songsnap.png" alt=""></p>
+          <div class="image-description">
+            <div class="image-text" onclick="navigate('https://song-snap.herokuapp.com/')"><i class="icon-play-sign" title="Visit Songsnap"></i></div>
+            <div class="image-text" onclick="navigate('https://github.com/PatrickLi727/Music-App')"><i class="icon-github" title="Github"></i></div>
+          </div>
+          <!-- <div class="image-text"><h3>Live</h3></div> -->
+        </div>
+        <div class="col-lg-3">
+          <p class="title">Songsnap</p>
+        <p>Songsnap is a personalized music app concept. Photograph yourself and grab a track from your Soundcloud favorites and playlists that matches your mood. Songsnap requires a Soundcloud account to try.
+        </p>
+
+        <ul>
+          <li>Built on Rails and React.js with Soundcloud authentication.</li>
+          <li>HTML5 video capture combined with Microsoft emotion API quantifies facial emotion.</li>
+          <li>Soundcloud API filters and returns a track from user's Soundcloud favorites and playlists.</li>
+        </ul>
+        </div>
+
+				<div class="col-lg-6 col-lg-offset-3 image">
 					<p><img class="img-responsive" src="assets/img/lyfecoach.png" alt=""></p>
           <div class="image-description">
             <div class="image-text" onclick="navigate('http://www.lyfecoach.io')"><i class="icon-play-sign" title="Visit Lyfecoach"></i></div>
@@ -154,7 +177,7 @@
 				</div>
 				<div class="col-lg-3">
 					<p class="title">Lyfecoach</p>
-				<p>Lyfecoach is a full-stack event-browsing app inspired by EventBrite, but designed for following event hosts. Users have one place to stay updated from all of their favorite event organizers.
+				<p>Lyfecoach is a full-stack web app / social media platform designed for event-browsing and for following event hosts. Users have one place to stay updated from all of their favorite event organizers.
 				</p>
         <ul>
           <li>Social media app built on Rails and React.</li>
