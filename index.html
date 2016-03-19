@@ -41,10 +41,15 @@
 					<div class="dropdown">
 						<ul id="nav" class="nav">
 							<li class="menu-item"><a class="smoothScroll" href="#about" title="About">about</a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#work" title="Projects">projects</a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact">contact</li>
+              <li class="menu-item"><a class="smoothScroll" href="#work" title="Projects">projects</a></li>
+              <li class="menu-item"><a class="smoothScroll" href="#contact">contact</a></li>
+              <li class="menu-item"><a href="assets/resume.pdf" title="Resume"><i class="icon-file"></i></a></li>
 						</ul><!--/ uL#nav -->
 					</div><!-- /.dropdown -->
+
+          <div class="col-lg-offset-3 col-lg-3">
+
+          </div>
 
 					<div class="clear"></div>
 				</div><!--/.row -->
@@ -65,6 +70,8 @@
 			</div><!--/.row -->
 		</div><!--/.container -->
 	</div><!--/.#headerwrap -->
+
+  <div></div>
 
 
 	<section id="about" name="about"></section>
@@ -88,55 +95,9 @@
           </p>
 				</div>
 			</div>
-      <div class="row">
-        <div class="col-lg-offset-3 col-lg-3">
-					<p><a href="assets/resume.pdf"><i class="icon-file"></i></a>Resume PDF</p>
-				</div>
-      </div>
       <!--/.row -->
 		</div><!--/.container -->
 
-    <!-- <div class="container">
-			<div class="row">
-				<div class="col-lg-1 col-lg-offset-3 centered">
-					<p>Ruby</p>
-          <img class="language" src="assets/img/icons/ruby.png">
-				</div>
-				<div class="col-lg-1 centered">
-					<p>Rails</p>
-          <img class="language" src="assets/img/icons/rails.png">
-				</div>
-				<div class="col-lg-1 centered">
-					<p>JavaScript</p>
-          <img class="language" src="assets/img/icons/javascript.png">
-				</div>
-        <div class="col-lg-1 centered">
-          <p>React</p>
-          <img class="language" src="assets/img/icons/react.png">
-        </div>
-      </div>
-        <br>
-        <br>
-	    <div class="row">
-				<div class="col-lg-1 col-lg-offset-3 centered">
-					<p>HTML5</p>
-          <img class="language" src="assets/img/icons/HTML5.png">
-				</div>
-				<div class="col-lg-1 centered">
-					<p>CSS3</p>
-          <img class="language" src="assets/img/icons/css.png">
-				</div>
-				<div class="col-lg-1 centered">
-					<p>PostgreSQL</p>
-          <img class="language" src="assets/img/icons/postgresql.png">
-				</div>
-        <div class="col-lg-1 centered">
-          <p>JQuery</p>
-          <img class="language" src="assets/img/icons/jquery.png">
-        </div>
-      </div>
-			<br>
-		</div><!--/.container --> -->
 	</div><!--/ #intro -->
 
 	<section id="work" name="work"></section>
@@ -149,8 +110,10 @@
 
         <div class="col-lg-6 image">
           <iframe width="550" height="400" src="https://www.youtube.com/embed/kCJ1dsj0Jvc"></iframe>
+          <div class="wrapped">
             <div class="image-text" onclick="navigate('https://song-snap.herokuapp.com/')"><i class="icon-play-sign" title="Visit Songsnap"></i></div>
             <div class="image-text" onclick="navigate('https://github.com/PatrickLi727/Music-App')"><i class="icon-github" title="Github"></i></div>
+          </div>
         </div>
         <div class="col-lg-3">
           <p class="title">Songsnap</p>
@@ -170,7 +133,6 @@
             <div class="image-text" onclick="navigate('http://www.lyfecoach.io')"><i class="icon-play-sign" title="Visit Lyfecoach"></i></div>
             <div class="image-text" onclick="navigate('https://github.com/PatrickLi727/Lyfecoach')"><i class="icon-github" title="Github"></i></div>
           </div>
-          <!-- <div class="image-text"><h3>Live</h3></div> -->
 				</div>
 				<div class="col-lg-3">
 					<p class="title">Lyfecoach</p>
@@ -278,10 +240,10 @@
       function resizeDiv() {
         vpw = $(window).width();
         vph = $(window).height();
-        $('#headerwrap').css({'height': 0.6 * vpw});
+        $('#headerwrap').css({'height': 20 * Math.sqrt(vpw)});
         $('#headerwrap').css({'padding-top': 0.15 * vpw});
-        $('#headerwrap h1').css({'font-size': Math.sqrt(1.4 * vpw)});
-        $('#headerwrap h3').css({'font-size': Math.sqrt(.4 * vpw)});
+        // $('#headerwrap h1').css({'font-size': Math.sqrt(1.4 * vpw)});
+        // $('#headerwrap h3').css({'font-size': Math.sqrt(.4 * vpw)});
       }
     </script>
   </body>
