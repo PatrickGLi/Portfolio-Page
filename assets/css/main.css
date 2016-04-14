@@ -127,10 +127,10 @@ a:after {
 
 #section-topbar ul#nav a {
   display: block;
-  font: normal 20px/28px "Raleway", Helvetica, Arial, sans-serif;
+  font: normal 18px/26px "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 300;
   text-decoration: none;
-  padding: 18px 20px 18px 20px;
+  padding: 18px 14px 18px 14px;
 }
 
 	#section-topbar ul#nav a:hover {
@@ -148,7 +148,7 @@ a:after {
 
 /* Header Wrap */
 #headerwrap {
-	/*margin-top: 60px;*/
+	margin-top: 60px;
 	text-align:center;
   /*height: 700px;*/
 	width: 100%;
@@ -165,9 +165,13 @@ a:after {
     background-size: cover;
 
   width: 100%;
-  height: 100%;
   position: absolute;
-  bottom: -30px;
+  /*top : 500px;*/
+}
+
+#headerwrap .row {
+  position: relative;
+  top: 100px;
 }
 
 #headerwrap h1 {
@@ -342,4 +346,9 @@ sm {
 .title {
   font-size: 24px;
   font-weight: 400;
+}
+
+.title:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
