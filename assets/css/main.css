@@ -149,6 +149,7 @@ a:after {
 /* Header Wrap */
 #headerwrap {
 	margin-top: 60px;
+  margin-bottom: 50px;
 	text-align:center;
   /*height: 700px;*/
 	width: 100%;

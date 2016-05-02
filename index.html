@@ -118,7 +118,7 @@
         </p>
 
         <ul>
-          <li>Built on Rails and React.js with Soundcloud authentication.</li>
+          <li>Built on Rails and React.js with Soundcloud authentication and music caching layer.</li>
           <li>HTML5 video capture combined with Microsoft emotion API quantifies facial emotion.</li>
           <li>Soundcloud API filters and returns a track from user's Soundcloud favorites and playlists.</li>
         </ul>
@@ -136,8 +136,8 @@
 				<p>Lyfecoach is a full-stack web app / social media platform designed for event-browsing and for following event hosts. Users have one place to stay updated from all of their favorite event organizers.
 				</p>
         <ul>
-          <li>Social media app built on Rails and React.</li>
-          <li>Google Maps and Google Places API for searching nearby events.</li>
+          <li>Social media app built on Rails and React.js with Flux architecture.</li>
+          <li>Query filtering and Google Geocoding API for an intuitive event browsing experience.</li>
           <li>User authentication with BCrypt encryption.</li>
           <li>Single page implementation of event and user browsing.</li>
         </ul>
@@ -156,7 +156,7 @@
 					</p>
           <ul>
             <li>JavaScript game using HTML5's Canvas.</li>
-            <li>Simple but immersive design.</li>
+            <li>Game design using JS animation frames with a focus on OOP.</li>
           </ul>
 				</div>
 
@@ -237,8 +237,8 @@
       function resizeDiv() {
         vpw = $(window).width();
         vph = $(window).height();
-        console.log(50 * Math.sqrt(vpw));
-        $('#background-photo').css({'height': 14 * Math.sqrt(vpw) + .1 * vpw });
+        // console.log(50 * Math.sqrt(vpw));
+        $('#background-photo').css({'height': 14 * Math.sqrt(vpw) + .15 * vpw });
         $('#headerwrap').css({'height': 14 * Math.sqrt(vpw) + .1 * vpw });
         // $('#background-photo').css({'padding-top': 0.15 * vpw});
         $('#demo').css({'height': 12 * Math.sqrt(vpw)});
